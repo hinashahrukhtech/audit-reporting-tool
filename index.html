@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <title>Administrator-Capital Smart City Assistance Tool-Dasboard</title>
+    
+    <!-- App Icons -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!--Morris Chart CSS -->
+    <link rel="stylesheet" href="assets/plugins/morris/morris.css">
+
+    <!-- App css -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="preloader"><div id="status"><div class="spinner"></div></div></div>
+    <div class="header-bg">
+        <!-- Navigation Bar-->
+        <header id="topnav">
+            <div class="topbar-main">
+                <div class="container-fluid">
+
+                    <!-- Logo container-->
+                    <div class="logo">
+                        <!-- Text Logo -->
+                        <a href="index.html" class="logo">
+                            Audit Assistance Tool   
+                        </a>
+                    </div>
+                    <!-- End Logo container-->
+                    <div class="menu-extras topbar-custom">
+
+                        <ul class="list-inline float-right mb-0">
+
+                            <!-- User-->
+                            <li class="list-inline-item dropdown notification-list">
+                                <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button"
+                                aria-haspopup="false" aria-expanded="false">
+                                <img src="assets/images/users/avatar-1.jpg" alt="user" class="rounded-circle">
+                                <span class="ml-1">Name Here 
+                                    <i class="mdi mdi-chevron-down"></i>
+                                </span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="login.html"><i class="dripicons-exit text-muted"></i> Logout</a>
+                            </div>
+                        </li>
+                        <li class="menu-item list-inline-item">
+                            <!-- Mobile menu toggle-->
+                            <a class="navbar-toggle nav-link">
+                                <div class="lines">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </a>
+                            <!-- End mobile menu toggle-->
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- end menu-extras -->
+
+                <div class="clearfix"></div>
+
+            </div> <!-- end container -->
+        </div>
+        <!-- end topbar-main -->
+
+        <!-- MENU Start -->
+        <div class="navbar-custom">
+            <div class="container-fluid">
+                <div id="navigation">
+                    <!-- Navigation Menu-->
+                    <ul class="navigation-menu">
+
+                        <li class="has-submenu">
+                            <a href="index.html"><i class="dripicons-device-desktop"></i>Dashboard</a>
+                        </li>
+
+                        <li class="has-submenu">
+                            <a href="#"><i class="fa fa-hospital-o"></i>Observation <i class="mdi mdi-chevron-down mdi-drop"></i></a>
+                            <ul class="submenu megamenu">
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <a href="add-observation.html">
+                                                <i class="fa fa-hospital-o" style="background-color: #026a2d; 
+                                                margin-right: 5px;" ></i>Add 
+                                            </a>
+                                        </li>
+                                        <li><a href="update-observation.html"><i class="fa fa-pencil-square-o" style="background-color: #026a2d; 
+                                        margin-right: 5px;" ></i>Update</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- End navigation menu -->
+                </div> <!-- end #navigation -->
+            </div> <!-- end container -->
+        </div> <!-- end navbar-custom -->
+    </header>
+    <!-- End Navigation Bar-->
+
+    <div class="container-fluid">
+        <!-- Page-Title -->
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="page-title-box">
+                    <h4 class="page-title"> <i class="dripicons-meter"></i> Dashboard</h4>
+                </div>
+            </div>
+        </div>
+        <!-- end page title end breadcrumb -->
+
+    </div>
+</div>
+
+
+<div class="wrapper">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-6 col-xl-3">
+                <div class="card text-center m-b-30">
+                    <div class="mb-2 card-body text-muted">
+                        <h3 class="text-info"></h3>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card text-center m-b-30">
+                    <div class="mb-2 card-body text-muted">
+                        <h3 class="text-purple"></h3>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card text-center m-b-30">
+                    <div class="mb-2 card-body text-muted">
+                        <h3 class="text-primary"></h3>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3">
+                <div class="card text-center m-b-30">
+                    <div class="mb-2 card-body text-muted">
+                        <h3 class="text-danger"></h3>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end row -->
+
+        <div class="row">
+
+            <div class="col-xl-4">
+                <div class="card m-b-30">
+                    <div class="card-body">
+                        <h4 class="mt-0 header-title"></h4>
+
+                        <div class="row text-center m-t-20">
+                            <div class="col-6">
+                                <h5 class=""></h5>
+                                <p class="text-muted font-14"></p>
+                            </div>
+                            <div class="col-6">
+                                <h5 class=""></h5>
+                                <p class="text-muted font-14"></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-8">
+                <div class="card m-b-30">
+                    <div class="card-body">
+                        <h4 class="mt-0 header-title"></h4>
+
+                        <div class="row text-center m-t-20">
+                            <div class="col-4">
+                                <h5 class=""></h5>
+                                <p class="text-muted font-14"></p>
+                            </div>
+                            <div class="col-4">
+                                <h5 class=""></h5>
+                                <p class="text-muted font-14"></p>
+                            </div>
+                            <div class="col-4">
+                                <h5 class=""></h5>
+                                <p class="text-muted font-14"></p>
+                            </div>
+                        </div>
+
+                        <div id="morris-area-example" class="dash-chart"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end row -->
+
+
+        </div>
+        <!-- end row -->
+
+    </div> <!-- end container -->
+</div>
+<!-- end wrapper -->
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                © 2018 All Rights Reserved 
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+
+<!-- jQuery  -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/modernizr.min.js"></script>
+<script src="assets/js/waves.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>
+<script src="assets/js/jquery.nicescroll.js"></script>
+<script src="assets/js/jquery.scrollTo.min.js"></script>
+
+<!--Morris Chart-->
+<script src="assets/plugins/morris/morris.min.js"></script>
+<script src="assets/plugins/raphael/raphael-min.js"></script>
+
+<script src="assets/pages/dashborad.js"></script>
+
+<!-- App js -->
+<script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
