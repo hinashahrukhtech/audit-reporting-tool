@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <title>Client-Capital Smart City Assistance Tool-Dasboard</title>
-    
+    <title>Capital Smart City Assistance Tool-Update-Comments</title>
+
     <!-- App Icons -->
     <link rel="shortcut icon" href="assets/images/favicon.ico">
-
-    <!--Morris Chart CSS -->
-    <link rel="stylesheet" href="assets/plugins/morris/morris.css">
 
     <!-- App css -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -19,9 +15,12 @@
 
 </head>
 
+
 <body>
+
     <!-- Loader -->
     <div id="preloader"><div id="status"><div class="spinner"></div></div></div>
+
     <div class="header-bg">
         <!-- Navigation Bar-->
         <header id="topnav">
@@ -89,7 +88,7 @@
 
                         <li class="has-submenu">
                             <a href="#"><i class="fa fa-hospital-o"></i>Comments <i class="mdi mdi-chevron-down mdi-drop"></i></a>
-                            <ul class="submenu megamenu">
+             <ul class="submenu megamenu">
                                 <li>
                                     <ul>
                                         <li>
@@ -102,8 +101,7 @@
                                         margin-right: 5px;" ></i>Update</a></li>
                                     </ul>
                                 </li>
-                            </ul>
-                        </li>
+                            </ul>           </li>
 
                             </ul>
                         </li>
@@ -120,7 +118,8 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="page-title-box">
-                    <h4 class="page-title"> <i class="dripicons-meter"></i> Dashboard</h4>
+                    <h4 class="page-title"> <i class="dripicons-box"></i> Update Comments</h4>
+
                 </div>
             </div>
         </div>
@@ -134,95 +133,68 @@
     <div class="container-fluid">
 
         <div class="row">
-            <div class="col-md-6 col-xl-3">
-                <div class="card text-center m-b-30">
-                    <div class="mb-2 card-body text-muted">
-                        <h3 class="text-info"></h3>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3">
-                <div class="card text-center m-b-30">
-                    <div class="mb-2 card-body text-muted">
-                        <h3 class="text-purple"></h3>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3">
-                <div class="card text-center m-b-30">
-                    <div class="mb-2 card-body text-muted">
-                        <h3 class="text-primary"></h3>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-3">
-                <div class="card text-center m-b-30">
-                    <div class="mb-2 card-body text-muted">
-                        <h3 class="text-danger"></h3>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end row -->
-
-        <div class="row">
-
-            <div class="col-xl-4">
-                <div class="card m-b-30">
+            <div class="col-lg-12">
+                <div class="card m-b-20">
                     <div class="card-body">
-                        <h4 class="mt-0 header-title"></h4>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="p-20">
+                                        <div class="form-group">
+                                            <label>ID</label>
+                                            <input type="text" class="form-control" disabled="disabled">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Observation</label>
+                                            <textarea id="textarea" class="form-control"  rows="3" placeholder="Enter Observation" disabled="disabled"></textarea>
+                                        </div>
 
-                        <div class="row text-center m-t-20">
-                            <div class="col-6">
-                                <h5 class=""></h5>
-                                <p class="text-muted font-14"></p>
-                            </div>
-                            <div class="col-6">
-                                <h5 class=""></h5>
-                                <p class="text-muted font-14"></p>
-                            </div>
-                        </div>
+                                        <div class="form-group">
+                                            <label>Recommendation</label>
+                                            <textarea id="textarea" class="form-control"  rows="3" placeholder="Enter Recommendation" disabled="disabled"></textarea>
+                                        </div>                                        
 
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="p-20">
+                                        <div class="form-group">
+                                            <label>Status</label>
+                                            <div>
+                                                <select class="form-control" id="exampleSelect1" name="select" size="1" disabled="disabled">
+                                                    <option selected class="test">Select...</option>
+                                                    <option class="test">New
+                                                    </option>
+                                                    <option>Follow Up</option>
+                                                    
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Implications</label>
+                                            <textarea id="textarea" class="form-control"  rows="3" placeholder="Enter Implications" disabled="disabled"></textarea>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Client Comments</label>
+                                            <textarea id="textarea" class="form-control"  rows="3" placeholder="Clients Comments" ></textarea>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <div>
+                                                <button type="submit" class="btn btn-secondary waves-effect m-l-5" style="background: radial-gradient(at 50% -20%, #3cb75b, #0a1832) fixed;float: right;">
+                                                    Update Comments
+                                                </button>
+                                            </div>
+                                        </div
+                                    </div>
+                                </div> <!-- end col -->
+                            </div> <!-- end row -->
                     </div>
                 </div>
-            </div>
-
-            <div class="col-xl-8">
-                <div class="card m-b-30">
-                    <div class="card-body">
-                        <h4 class="mt-0 header-title"></h4>
-
-                        <div class="row text-center m-t-20">
-                            <div class="col-4">
-                                <h5 class=""></h5>
-                                <p class="text-muted font-14"></p>
-                            </div>
-                            <div class="col-4">
-                                <h5 class=""></h5>
-                                <p class="text-muted font-14"></p>
-                            </div>
-                            <div class="col-4">
-                                <h5 class=""></h5>
-                                <p class="text-muted font-14"></p>
-                            </div>
-                        </div>
-
-                        <div id="morris-area-example" class="dash-chart"></div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
         <!-- end row -->
-
-
-        </div>
-        <!-- end row -->
-
     </div> <!-- end container -->
 </div>
 <!-- end wrapper -->
@@ -250,16 +222,28 @@
 <script src="assets/js/jquery.slimscroll.js"></script>
 <script src="assets/js/jquery.nicescroll.js"></script>
 <script src="assets/js/jquery.scrollTo.min.js"></script>
+<script src="assets/js/myScript.js"></script>
 
-<!--Morris Chart-->
-<script src="assets/plugins/morris/morris.min.js"></script>
-<script src="assets/plugins/raphael/raphael-min.js"></script>
-
-<script src="assets/pages/dashborad.js"></script>
+<!-- Bootstrap inputmask js -->
+<script src="assets/plugins/bootstrap-inputmask/bootstrap-inputmask.min.js" type="text/javascript"></script>
 
 <!-- App js -->
 <script src="assets/js/app.js"></script>
 
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('form').parsley();
+    });
+    window.onload = function() {
+
+        document.getElementById("r_1").style.display = "none";
+
+    };
+</script>
+
+
+
 </body>
 
+<!-- Mirrored from themesbrand.com/fonik/green/form-mask.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 May 2018 13:47:52 GMT -->
 </html>
